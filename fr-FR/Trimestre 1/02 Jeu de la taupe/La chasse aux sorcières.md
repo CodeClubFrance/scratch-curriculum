@@ -2,7 +2,7 @@ Niveau 1
 
 #La chasse aux sorcières
 
-__Introduction:__
+__Introduction :__
 Ce projet est comme le jeu du __Tir aux Pigeons__. Tu gagnes des points en touchant les sorcières qui apparaissent à l'écran. Le but du jeu est de gagner le plus de points possibles en 30 secondes.
 
 ##Étape 1 : Crée une sorcière volante
@@ -13,7 +13,7 @@ Ce projet est comme le jeu du __Tir aux Pigeons__. Tu gagnes des points en touch
 
 __Maintenant, nous voulons faire bouger notre sorcière.__
 
-4. Ajoute une 'variable' pour l'objet sorcière. Appelle-la 'vitesse' et coche "Seulement pour cet objet". Sur la __scène__, tu dois voir écrit “Objet 1 vitesse”. Si il est écrit seulement “vitesse”, supprime la variable et recommence. Lors de la création, il faut s'assurer de cliquer sur le bouton "Seulement pour cet objet". On ne veut pas afficher la vitesse : décoche la case à gauche de la variable 'vitesse' dans __la palette des variables__. La variable 'vitesse' va contrôler la vitesse de déplacement de la sorcière. Nous utilisons une variable pour pouvoir changer la vitesse au cours du jeu.
+4. Ajoute une 'variable' pour l'objet sorcière. Appelle-la 'vitesse' et coche "Seulement pour cet objet". Sur la __scène__, tu dois voir : “Objet 1 vitesse”. S'il y a seulement “vitesse”, alors supprime la variable et recommence. Lors de la création, il faut s'assurer de cliquer sur le bouton "Seulement pour cet objet". On ne veut pas afficher la vitesse : décoche la case à gauche de la variable 'vitesse' dans __la palette des variables__. La variable 'vitesse' va contrôler la vitesse de déplacement de la sorcière. Nous utilisons une variable pour pouvoir changer la vitesse au cours du jeu.
 5. Nous voulons que la sorcière commence à bouger quand le jeu démarre. __Écris donc un script comme ceci__ :
 
 ```scratch
@@ -56,15 +56,15 @@ Est-ce que la sorcière se déplace d’un bord à l’autre de l’écran ?
 
 Enregistre ton travail.
 
-###À essayer
+###À essayer :
 __Essaie de changer la valeur de la variable “vitesse” pour faire voler la sorcière plus rapidement ou plus lentement.__
 
 __Comment ferais-tu pour que la sorcière bouge de plus en plus vite ?__
 (C’est une tâche délicate. Ne t’inquiète pas si tu n’arrives pas à le faire. Tu vas avoir plus d’indices en continuant le projet.)
 
-##Étape 2 : Fais apparaître et disparaître la sorcière aléatoirement
+##Étape 2 : Fais apparaître et disparaître la sorcière au hasard
 
-Pour rendre le jeu plus amusant, nous voulons faire apparaître et disparaître la sorcière de manière aléatoire, c'est-à-dire : au hasard. Nous ferons ça avec un autre script qui va tourner en même temps que celui du mouvement de la sorcière. Ce script doit faire disparaître la sorcière pendant un temps aléatoire, puis la faire apparaître de nouveau pour un temps aléatoire. Et recommencer indéfiniment (ou jusqu’à la fin du jeu).
+Pour rendre le jeu plus amusant, nous voulons faire apparaître et disparaître la sorcière de manière aléatoire, c'est-à-dire au hasard. Nous ferons ça avec un autre script qui va tourner en même temps que celui du mouvement de la sorcière. Ce script doit faire disparaître la sorcière pendant un temps aléatoire, puis la faire apparaître de nouveau pour un temps aléatoire. Et recommencer indéfiniment (ou jusqu’à la fin du jeu).
 
 __Crée ce script pour la sorcière :__
 
@@ -90,7 +90,7 @@ Est-ce que la sorcière se déplace d’un bord à l’autre de l’écran, appa
 
 Enregistre ton projet.
 
-###À essayer
+###À essayer :
 __Essaie de changer les limites des nombres aléatoires. Qu’est-ce qui se passe si tu choisis de grands nombres ou de petits nombres ?__
 (Est-ce que ça te donne plus d’indices sur la manière d’augmenter la vitesse de la sorcière au fur et à mesure du jeu ?)
 
@@ -100,7 +100,7 @@ Pour transformer notre projet en jeu, il faut donner quelque chose à faire aux 
 
 1. Dans l’onglet __son__, importe le son __electronic/fairydust__. 
 
-2. Ajoute ce script à la sorcière:
+2. Ajoute ce script à la sorcière :
 
 ```scratch
 
@@ -117,7 +117,7 @@ Est-ce que la sorcière disparaît et joue un son quand tu cliques sur elle ?
 
 Enregistre ton projet
 
-###À essayer
+###À essayer :
 __Demande si tu peux enregistrer toi-même ta voix__
 
 ##Étape 4 : Ajoute un score et un chronomètre
@@ -138,7 +138,7 @@ Nous avons notre sorcière, mais nous voulons créer un vrai jeu ! Nous voulons 
 	changer score par 1
 ```
 
-2. Clique sur la __scène__ et crée une __nouvelle variable__ (cette fois juste pour la scène). Appelle-la __chronomètre__. Ajoute un nouveau script qui s’exécute quand on appuie sur le drapeau vert. Le script met le chronomètre à __30__ et remet le score à __0__. Ensuite, utilise le bloc “répéter jusqu’à” pour attendre une seconde puis diminuer le “chronomètre” de 1. Il faut répéter tout ça jusqu’à ce que le chronomètre soit à 0. A ce moment là, utilise le bloc “arrêter tout” pour arrêter le jeu. 
+2. Clique sur la __scène__ et crée une __nouvelle variable__ (cette fois juste pour la scène). Appelle-la __chronomètre__. Ajoute un nouveau script qui s’exécute quand on appuie sur le drapeau vert. Le script met le chronomètre à __30__ et remet le score à __0__ au début de la partie. Ensuite, utilise le bloc “répéter jusqu’à” pour attendre une seconde puis diminuer le “chronomètre” de 1. Il faut répéter tout ça jusqu’à ce que le chronomètre soit à 0. À ce moment là, utilise le bloc “arrêter tout” pour arrêter le jeu. 
 
 ```scratch
 
@@ -152,7 +152,7 @@ Nous avons notre sorcière, mais nous voulons créer un vrai jeu ! Nous voulons 
 
 		attendre 1 seconde
 
-		changer score par -1
+		changer chronomètre par -1
 
 	(fin répéter)
 
@@ -165,7 +165,7 @@ __Clique sur le drapeau vert__
 
 Enregistre ton travail
 
-###À essayer
+###À essayer :
 __Comment peux-tu faire bouger la sorcière de plus en plus vite ?__
 
 
@@ -186,10 +186,10 @@ Est-ce que tu as trois sorcières qui volent d'un bout à l'autre de la scène ?
 
 Enregistre ton travail
 
-###À essayer
+###À essayer :
 1. Quel est le bon nombre de sorcières pour le jeu ?
 2. Est-ce que tu peux changer l’apparence des sorcières ? Tu pourrais éditer leurs costumes, ou bien utiliser des blocs de la palette “Apparence” pour les changer.
-3. Est-ce que tu peux faire marquer un nombre de points différent pour chaque sorcière ? Que penses-tu donner le plus de points pour la plus rapide (et la plus petite) sorcière ?
+3. Est-ce que tu peux faire marquer un nombre de points différent pour chaque sorcière ? Que penses-tu de donner le plus de points pour la plus rapide (et la plus petite) sorcière ?
 
 
 __Bravo ! Tu as terminé. Maintenant, tu peux t’amuser avec ton jeu !__
